@@ -26,7 +26,8 @@ npm install @playwright/test
 Update the `FormedixTest.SignIn` method in `Formedix.spec.js` with the appropriate username and password for your Formedix account.
 
 3. Test Data
-When updating the 'Description' section in 'Edit forms', make sure that the text value in 'Locale' field is not the same with the existing 'Locale' if there is any.
+When updating the 'Description' section in 'Edit forms', make sure that the text value in 'Locale' field is not the same with the existing 'Locale' text values if there is any.
+The user can just update the values for the parameters EnterText, EnterLocale and UpdatedText before starting every run.
 
 4. Running Tests
 To run the tests, execute any of the the following command in your terminal:
@@ -39,7 +40,5 @@ This command will run the tests defined in `Formedix.spec.js` using Playwright's
 
 Author:
 -------
-
 [Lynel Angelo D. Gabrie]
 [lyneladgabriel@gmail.com]
-

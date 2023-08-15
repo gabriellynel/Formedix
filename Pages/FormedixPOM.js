@@ -56,6 +56,7 @@ exports.Formedix = class Formedix {
         await this.EnterLocale.fill(EnterLocale)
         await this.UpdateButton.waitFor();
         await expect(this.UpdateButton).toBeEnabled()
+        //await this.page.pause();
         await this.UpdateButton.click()
         await this.UpdateButton.waitFor();
         await expect(this.UpdateButton).toBeDisabled()
