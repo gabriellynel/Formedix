@@ -26,7 +26,7 @@ exports.Formedix = class Formedix {
         this.VerifyMainForm = page.locator('xpath=//span[@id="formDescription"]')
         //SignOut
         this.UserProfile = page.locator('xpath=//p[text()="testteamtechtest"]')
-        this.SignOut = page.locator('xpath=//p[text()="testteamtechtest"]')
+        this.SignOutButton = page.locator('xpath=//p[text()="testteamtechtest"]')
     }
 
     async NavigateToLoginPage() {
@@ -56,13 +56,15 @@ exports.Formedix = class Formedix {
         await this.EnterLocale.fill(EnterLocale)
         await this.UpdateButton.waitFor();
         await expect(this.UpdateButton).toBeEnabled()
-        //await this.page.pause();
         await this.UpdateButton.click()
         await this.UpdateButton.waitFor();
         await expect(this.UpdateButton).toBeDisabled()
         await expect(this.VerifyMainForm).toHaveText(UpdatedText)
+    }
+    async SignOut(){
+        //await this.page.pause();
         await this.UserProfile.click()
-        await this.SignOut.click()
+        await this.SignOutButton.click()
     }
 }
 

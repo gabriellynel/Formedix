@@ -9,5 +9,5 @@ test('Formedix', async ({ page }) => {
     await FormedixTest.SignIn('testteamtechtest', 'Ryz3T3st!x1')
     await FormedixTest.NavigateToForms()
     await FormedixTest.UpdateMedicalHistory('DescriptionUpdate1', 'LocaleUpdate1', 'DescriptionUpdate1')
-
+    await FormedixTest.SignOut()
 });

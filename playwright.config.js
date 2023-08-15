@@ -13,7 +13,7 @@ const { defineConfig, devices } = require('@playwright/test');
  */
 module.exports = defineConfig({
   //testDir: './POC',
-  testDir: './Formedix/demo',
+  testDir: './Formedix/FormedixTest',
   /*Maximum time one test can run for*/
   timeout: 20 * 3000,
   expect: {
