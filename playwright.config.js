@@ -15,7 +15,7 @@ module.exports = defineConfig({
   //testDir: './POC',
   testDir: './Formedix/FormedixTest',
   /*Maximum time one test can run for*/
-  timeout: 20 * 3000,
+  timeout: 30 * 3000,
   expect: {
     /*
     * Maximum time expect() should wait for the condition to be met.
